@@ -29,7 +29,7 @@ public class Login {
     @FindBy(xpath = "//*[@id=\"customer_login\"]/div[1]/form/p[3]/button")
     WebElement btnLogin;
 
-    public void loginForm(String email, String password) {
+    public void login(String email, String password) {
         this.usernameLogin.sendKeys(email);
         System.out.println("insert username or email login");
         this.passwordLogin.sendKeys(password);
