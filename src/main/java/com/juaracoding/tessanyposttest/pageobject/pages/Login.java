@@ -14,39 +14,28 @@ public class Login {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(name = "username")
-    WebElement username;
+    @FindBy(id = "username")
+    WebElement usernameLogin;
 
-    @FindBy(name = "password")
-    WebElement password;
+    @FindBy(id = "password")
+    WebElement passwordLogin;
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button")
+    @FindBy(xpath = "//*[@id=\"customer_login\"]/div[1]/form/p[2]/span/span")
+    WebElement Password;
+
+    @FindBy(id = "rememberme")
+    WebElement Rememberme;
+
+    @FindBy(xpath = "//*[@id=\"customer_login\"]/div[1]/form/p[3]/button")
     WebElement btnLogin;
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[1]/div[1]/h5")
-    WebElement txtInformationEmployee;
-
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/p")
-    WebElement txtInvalid;
-
-    @FindBy(xpath = "//div[@class='orangehrm-login-slot-wrapper']//div[1]//div[1]//span[1]")
-    WebElement txtRequired;
-
-    public void login(String username, String password){
-        this.username.sendKeys(username);
-        this.password.sendKeys(password);
+    public void loginForm(String email, String password) {
+        this.usernameLogin.sendKeys(email);
+        System.out.println("insert username or email login");
+        this.passwordLogin.sendKeys(password);
+        System.out.println("insert password login");
+        Password.click();
+        Rememberme.click();
         btnLogin.click();
-    }
-
-    public String getTxtInformationEmployee(){
-        return txtInformationEmployee.getText();
-    }
-
-    public String getTxtInvalidCredentials(){
-        return txtInvalid.getText();
-    }
-
-    public String getTxtRequired(){
-        return txtRequired.getText();
     }
 }
