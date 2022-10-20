@@ -24,10 +24,10 @@ public class Login {
     WebElement btnLogin;
 
     @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[1]/div[1]/h5")
-    WebElement txtEmployeeInformation;
+    WebElement txtInformationEmployee;
 
     @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/p")
-    WebElement txtInvalidCredentials;
+    WebElement txtInvalid;
 
     @FindBy(xpath = "//div[@class='orangehrm-login-slot-wrapper']//div[1]//div[1]//span[1]")
     WebElement txtRequired;
@@ -38,12 +38,12 @@ public class Login {
         btnLogin.click();
     }
 
-    public String getTxtEmployeeInformation(){
-        return txtEmployeeInformation.getText();
+    public String getTxtInformationEmployee(){
+        return txtInformationEmployee.getText();
     }
 
     public String getTxtInvalidCredentials(){
-        return txtInvalidCredentials.getText();
+        return txtInvalid.getText();
     }
 
     public String getTxtRequired(){
