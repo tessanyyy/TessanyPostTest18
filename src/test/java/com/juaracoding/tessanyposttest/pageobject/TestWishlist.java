@@ -52,8 +52,8 @@ public class TestWishlist {
         search.searchItem();
         wishlist.btnWishlist();
         driver.navigate().refresh();
-        Assert.assertEquals(wishlist.getTxtProductOne(),"MUSTARD STRAPPY FRILL RIBBED MINI DRESS");
-        Assert.assertEquals(wishlist.getTxtProductTwo(),"WHITE MILKMAID HOOK AND EYE BODYCON MIDI DRESS");
+        Assert.assertEquals(wishlist.getTxtProductOne(),"BLACK LUX GRAPHIC TSHIRT");
+        Assert.assertEquals(wishlist.getTxtProductTwo(),"PINK FRUIT GRAPHIC FITTED T SHIRT");
         System.out.println("Test case add wishlist");
     }
 

@@ -2,6 +2,7 @@ package com.juaracoding.tessanyposttest.pageobject.drivers;
 
 import com.juaracoding.tessanyposttest.pageobject.drivers.strategies.DriverStrategy;
 import com.juaracoding.tessanyposttest.pageobject.drivers.strategies.DriverStrategyImplementer;
+import com.juaracoding.tessanyposttest.pageobject.utils.Constants;
 import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;

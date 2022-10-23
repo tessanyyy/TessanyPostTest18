@@ -16,16 +16,16 @@ public class Wishlist {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//*[@id=\"noo-site\"]/div[2]/div[2]/div/div/div[1]/div/div[1]/div[1]/div[2]/div/a")
+    @FindBy(xpath = "//*[@id=\"noo-site\"]/html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]")
     WebElement btnWishlistOne;
 
-    @FindBy(xpath = "//a[normalize-space()='mustard strappy frill ribbed mini dress']")
+    @FindBy(xpath = "//a[normalize-space()='black lux graphic t-shirt']")
     WebElement txtProductOne;
 
-    @FindBy(xpath = "//a[normalize-space()='white milkmaid hook and eye bodycon midi dress']")
+    @FindBy(xpath = "//a[normalize-space()='pink fruit graphic fitted t shirt']")
     WebElement txtProductTwo;
 
-    @FindBy(xpath = "//*[@id=\"noo-site\"]/div[2]/div[2]/div/div/div[3]/div/div[1]/div[1]/div[2]/div/a")
+    @FindBy(xpath = "//*[@id=\"noo-site\"]/html[1]/body[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/a[1]")
     WebElement btnWishlistTwo;
 
 
